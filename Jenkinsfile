@@ -11,7 +11,7 @@ pipeline {
         stage('Build Image') {
             steps {
                 //sh
-                bat "docker build -t='shashankpandey1991/selenium-docker' ."
+                bat "docker build -t=shashankpandey1991/selenium-docker ."
             }
         }
         stage('Push Image') {
