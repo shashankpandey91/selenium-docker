@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Book-Flight-module]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Book-flight-2(failed)">
+    <parameter name="expectedPrice" value="$1169 USD"/>
+    <parameter name="noOfPassengers" value="2"/>
+    <classes>
+      <class name="com.newtour.test.BookFlightTest">
+        <methods>
+          <include name="flightDetailsPage"/>
+          <include name="registrationConfirmationPage"/>
+          <include name="registrationPage"/>
+          <include name="flightConfirmationPage"/>
+          <include name="setupDriver"/>
+          <include name="tearDown"/>
+          <include name="setupParameter"/>
+          <include name="findFlightPage"/>
+        </methods>
+      </class> <!-- com.newtour.test.BookFlightTest -->
+    </classes>
+  </test> <!-- Book-flight-2(failed) -->
+  <test thread-count="5" parallel="tests" name="Book-flight-3(failed)">
+    <parameter name="expectedPrice" value="$1753 USD"/>
+    <parameter name="noOfPassengers" value="3"/>
+    <classes>
+      <class name="com.newtour.test.BookFlightTest">
+        <methods>
+          <include name="flightDetailsPage"/>
+          <include name="registrationConfirmationPage"/>
+          <include name="registrationPage"/>
+          <include name="flightConfirmationPage"/>
+          <include name="setupDriver"/>
+          <include name="tearDown"/>
+          <include name="setupParameter"/>
+          <include name="findFlightPage"/>
+        </methods>
+      </class> <!-- com.newtour.test.BookFlightTest -->
+    </classes>
+  </test> <!-- Book-flight-3(failed) -->
+</suite> <!-- Failed suite [Book-Flight-module] -->
